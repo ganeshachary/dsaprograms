@@ -70,3 +70,8 @@ output.
 
 
 -> git branch -d newbranch1 // delete the branch after merge if its not longer required.
+
+
+// for uploading in the github create repo and copy the url and then add below command
+
+-> git remote add origin https://github.com/ganeshachary/dsaprograms.git
