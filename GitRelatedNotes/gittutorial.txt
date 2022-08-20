@@ -80,5 +80,303 @@ output.
 // for pushing code at first as origin 
 ->git push --set-upstream origin master // this may ask github to authorize ur ide is some cases
 
+first to create any git folder machine
+    1. make a folder
+    2. add files
+    3. git init // command to initialize the folder for git
+
+-> git init
+
+-> git status :  to check status of files
+     =  untracked or tracked 
+
+
+// once done or reached mile stone add worked files for staging
+
+-> git add filename.extensiong eg - git add index.html
+
+// stage all files
+ 
+-> git add --all // this will add to stagging but not commitet
+                    //  git add --all is git add -A // shorthand
+
+
+ // after staging we need to commit, git treats each commit as save point.
+
+ -> git commit -m "This adds all the files to the git"    // -m "" is for adding message to commit      
+
+
+-> git status --short  // this command shows the status in short status flags 
+
+output.
+ M index.html 
+
+//Short status flags are:
+
+//?? - Untracked files
+//A - Files added to stage
+//M - Modified files
+//D - Deleted files     
+
+
+-> git commit -a -m "Updated index.html with a new line" // -a will also do staging and commit no need for separate staging step
+
+
+-> git log  // history of the commit
+
+-> git commit -help // used for manual of command
+
+
+
+
+
+***********************************************************************************************
+
+
+
+
+
+
+
+// branch 
+//when u want to do some new changes not needed in current code, create a new branch and merge it with main branch later
+
+
+->git branch newbranch1   // commamd and name of branch
+
+->git branch  // shows the current branch pointed to
+
+// to change the branch use checkout
+
+-> git checkout newbranch1   /  // make changes and add staging and commit as per need using above commandgit 
+                             // Using the -b option on checkout will create a new branch, and move to it, if it does not exist
+
+
+// after changes done commit the current branch go to master
+
+-> git checkout master
+
+// merge the branch 
+
+->git merge newbranch1   // this will merege the changes or adding of new branch to master if no changes done to same file it will siimply fastforwar point new bracnh as master
+                            //if not it will show the error and we can fix it by updating the file and check the git status to find the issue and fixes;
+
+
+-> git branch -d newbranch1 // delete the branch after merge if its not longer required.
+
+
+
+
+
+***********************************************************************************************
+
+
+
+
+// for uploading in the github create repo and copy the url and then add below command
+
+-> git remote add origin https://github.com/ganeshachary/dsaprograms.git
+
+
+
+
+
+// for pushing code at first as origin 
+->git push --set-upstream origin master // this may ask github to authorize ur ide is some cases
+
+
+
+***********************************************************************************************
+
+// pulling to keep uptodate with changes:
+
+// pull is pull is a combination of 2 different commands:
+
+//fetch
+//merge
+
+
+
+// fetch 
+
+
+-> git fetch origin  // fetch updates to see what has changed on GitHub:
+
+-> git status  // to see the recent changes if any 
+
+-> git log origin/master // to see the log of changes 
+
+-> git diff origin/master  // verify by showing the differences between our local master and origin/master:
+
+-> git merge origin/master //  have confirmed that the updates are as expected, and we can //merge current branch (master) with origin/maste
+
+
+-> git status // Check our status again to confirm we are up to date:
+
+
+
+-> git pull origin // Use pull to update our local Git:
+
+
+
+
+
+
+***********************************************************************************************
+
+
+// when changes are ahead in the local git u can use push to update the changes to github
+
+
+// commit the changes 
+-> git commit -a -m "Updated index.html. Resized image" // short hand for staging and commit together
+
+
+
+// check status 
+
+-> git status
+
+// push 
+
+git push origin
+
+// check status to check all is up to date
+-> git status
+
+
+
+
+*********************************************************************************************
+
+
+Git pull branch from github
+
+. create a branch in github
+. add some changes to it
+
+
+
+before going to newbranch , make the curren branch stable 
+
+
+// check status 
+
+-> git status
+
+//git pull
+
+-> git pull // if no changes are pending
+
+// check status 
+
+-> git status
+
+
+// check working branch
+
+-> git branch
+
+
+// if no more branch are shown use below command to check branch from server also
+
+-> git branch -a  // branch -r is for remote branches only.
+
+// checkout to new branch
+
+-> git checkout newbranch1
+
+
+
+//And check if it is all up to date:
+
+-> git pull
+
+
+// check working branch
+
+-> git branch
+
+
+
+
+*********************************************************************************************
+
+
+Git push branch from github
+
+
+// create a new branch.. after all the code is stable
+
+
+->git checkout -b update-readme  // this is short hand to create branch and  change to that branch
+
+
+
+
+// check status 
+
+-> git status
+
+
+// if any things needs to added 
+//here we addonly one file README.md so no add --all
+
+->git add README.md
+
+
+// check status 
+
+-> git status
+
+
+//commit
+
+git commit -m "Updated readme for GitHub Branches"
+
+
+
+//Now push the branch from our local Git repository, to GitHub, where everyone can see the changes:
+->git push origin update-readme
+
+
+// you can later go to gihub and merge the brach using pull request.
+
+
+
+**********************************************************The GitHub flow is a workflow designed to work well with Git and GitHub.
+
+It focuses on branching and makes it possible for teams to experiment freely, and make deployments regularly.
+
+The GitHub flow works like this:
+
+Create a new Branch
+Make changes and add Commits
+Open a Pull Request
+Review
+Deploy
+Merge
+
+
+
+// Fork is used to work on the code of some one else and suggest to add changes
+
+// Clone is used to work on shared repository and add changes to it
+
+-> git clone https://github.com/w3schools-test/w3schools-test.github.io.git
+
+//To specify a specific folder to clone to, add the name of the folder after 
+//the repository URL, like this:
+// git clone https://github.com/w3schools-test/w3schools-test.github.io.git myfolder
+
+
+
+
+
+
+
+
+
+
 
 
