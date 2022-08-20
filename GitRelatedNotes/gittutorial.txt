@@ -15,4 +15,45 @@ first to create any git folder machine
 
 // stage all files
  
--> git add --all
+-> git add --all // this will add to stagging but not commitet
+                    //  git add --all is git add -A // shorthand
+
+
+ // after staging we need to commit, git treats each commit as save point.
+
+ -> git commit -m "This adds all the files to the git"    // -m "" is for adding message to commit      
+
+
+-> git status --short  // this command shows the status in short status flags 
+
+output.
+ M index.html 
+
+//Short status flags are:
+
+//?? - Untracked files
+//A - Files added to stage
+//M - Modified files
+//D - Deleted files        
+
+
+
+-> git commit -a -m "Updated index.html with a new line" // -a will also do staging and commit no need for separate staging step
+
+
+-> git log  // history of the commit
+
+-> git commit -help // used for manual of command
+
+
+// branch 
+//when u want to do some new changes not needed in current code, create a new branch and merge it with main branch later
+
+
+->git branch hello-world   // commamd and name of branch
+
+->git branch  // shows the current branch pointed to
+
+// to change the branch use checkout
+
+-> git checkout hello-world  // make changes and add staging and commit as per need using above command
