@@ -34,27 +34,6 @@ output.
 //?? - Untracked files
 //A - Files added to stage
 //M - Modified files
-//D - Deleted files        
+//D - Deleted files     
 
 
-
--> git commit -a -m "Updated index.html with a new line" // -a will also do staging and commit no need for separate staging step
-
-
--> git log  // history of the commit
-
--> git commit -help // used for manual of command
-
-
-// branch 
-//when u want to do some new changes not needed in current code, create a new branch and merge it with main branch later
-
-
-->git branch hello-world   // commamd and name of branch
-
-->git branch  // shows the current branch pointed to
-
-// to change the branch use checkout
-
--> git checkout hello-world  // make changes and add staging and commit as per need using above commandgit 
-                             // Using the -b option on checkout will create a new branch, and move to it, if it does not exist
