@@ -37,3 +37,36 @@ output.
 //D - Deleted files     
 
 
+-> git commit -a -m "Updated index.html with a new line" // -a will also do staging and commit no need for separate staging step
+
+
+-> git log  // history of the commit
+
+-> git commit -help // used for manual of command
+
+
+// branch 
+//when u want to do some new changes not needed in current code, create a new branch and merge it with main branch later
+
+
+->git branch newbranch1   // commamd and name of branch
+
+->git branch  // shows the current branch pointed to
+
+// to change the branch use checkout
+
+-> git checkout newbranch1   /  // make changes and add staging and commit as per need using above commandgit 
+                             // Using the -b option on checkout will create a new branch, and move to it, if it does not exist
+
+
+// after changes done commit the current branch go to master
+
+-> git checkout master
+
+// merge the branch 
+
+->git merge newbranch1   // this will merege the changes or adding of new branch to master if no changes done to same file it will siimply fastforwar point new bracnh as master
+                            //if not it will show the error and we can fix it by updating the file and check the git status to find the issue and fixes;
+
+
+-> git branch -d newbranch1 // delete the branch after merge if its not longer required.
