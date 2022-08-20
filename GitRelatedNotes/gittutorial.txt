@@ -75,3 +75,10 @@ output.
 // for uploading in the github create repo and copy the url and then add below command
 
 -> git remote add origin https://github.com/ganeshachary/dsaprograms.git
+
+
+// for pushing code at first as origin 
+->git push --set-upstream origin master // this may ask github to authorize ur ide is some cases
+
+
+
