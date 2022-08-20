@@ -1,0 +1,28 @@
+
+hashing is used in the dictionaries(key and value) and set problems
+average case is O(1) for all insert,search,delete
+
+few application of hashing :
+    dictionaries, databaseindexing, cryptography,caches,symbols table in compiler/interpreters
+    routers,getting datafrom database and many more. 
+
+
+
+Class and interface structure;
+
+
+Map interface (Key,Value pair)
+    HashTable(sync)
+    HashMap(nonsync)
+    LinkedHashMap(similar to hashmap but maintains order)
+SortedMap(interface)
+    TreeMap
+
+Collection (interface)
+    Set interface (only Key)
+        Hashset(similar to hashmap only key)
+        LinkedHashSet(similar to linkedhashmap only key)
+    SortedSet(interface)    
+        TreeSet(sorted,ascending)
+
+

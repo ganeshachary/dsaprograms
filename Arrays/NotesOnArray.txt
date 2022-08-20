@@ -1,0 +1,6 @@
+Array is of two types in java static arr[] and dynamic ArrayList
+
+Some techniques to remember 
+    prefixsum keep an array 
+    Kadane's algorithm keep two variable to store max and other to store curr value
+    try to bring the iteration to O(n)

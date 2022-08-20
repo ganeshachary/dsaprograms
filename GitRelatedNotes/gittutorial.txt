@@ -1,0 +1,18 @@
+first to create any git folder machine
+    1. make a folder
+    2. add files
+    3. git init // command to initialize the folder for git
+
+-> git init
+
+-> git status :  to check status of files
+     =  untracked or tracked 
+
+
+// once done or reached mile stone add worked files for staging
+
+-> git add filename.extensiong eg - git add index.html
+
+// stage all files
+ 
+-> git add --all
